@@ -1,0 +1,17 @@
+{
+  "name": "leapap_test_oriane_nono",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parser.js",
+  "scripts": {
+    "parser": "node parser.js test-1.txt",
+    "scraper": "node scraper.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "puppeteer": "^24.41.0"
+  }
+}

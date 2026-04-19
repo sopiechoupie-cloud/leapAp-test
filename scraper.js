@@ -17,8 +17,11 @@ const puppeteer = require("puppeteer");
     });
 
     // TODO: login to LeapAP platform
-    await page.type('input[type="email"]', "coop.test@condoworks.co");
-    await page.type('input[type="password"]', "TheTest139");
+   const email = process.env.EMAIL;
+const password = process.env.PASSWORD;
+
+await page.type('input[type="email"]', email);
+await page.type('input[type="password"]', password);
 
     // Wait for submit button to be visible before clicking
     await page.waitForSelector('button[type="submit"]', { visible: true });
